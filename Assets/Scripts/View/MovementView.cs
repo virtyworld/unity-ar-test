@@ -6,5 +6,9 @@ public class MovementView : MonoBehaviour
     {
         transform.position = position;
     }
+    public void UpdateViewRotation(float rotationY)
+    {
+        transform.rotation = Quaternion.Euler(0, rotationY, 0);
+    }
 }
 
