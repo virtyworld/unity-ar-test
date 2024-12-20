@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -6,7 +5,6 @@ using UnityEngine.Events;
 public class ItemSpawnerController : MonoBehaviour
 {
     [SerializeField] private List<ItemSpawnerView> itemPrefabs;
-    [SerializeField] private Transform parentFolder;
     private ItemSpawnerModel itemSpawnerModel;
 
 

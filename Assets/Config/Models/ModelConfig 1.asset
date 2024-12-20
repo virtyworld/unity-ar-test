@@ -17,5 +17,4 @@ MonoBehaviour:
   description: trevi_prime_section2 (1450)
   sprite: {fileID: 21300000, guid: 66cc7163a979e114ca5b70c701710561, type: 3}
   position: {x: 0, y: 0, z: 0}
-  movespeed: 5
-  casingConfig: {fileID: 0}
+  movespeed: 20

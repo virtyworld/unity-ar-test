@@ -86,24 +86,17 @@ public class GameHandler : MonoBehaviour
         playAnimationUIController.Init(playAnimationUIModel, itemSpawnerModel, onPlayAnimationUIButtonClick, onSpawnItem);
     }
 
-    /// <summary>
-    /// Spawn an item based on the given model config.
-    /// If Spatial Tracking is enabled, the item's position will be set to the spawn position with spatial tracking.
-    /// </summary>
-    /// <param name="modelConfig">The model config of the item to spawn.</param>
     private void SpawnItem(ModelConfig modelConfig)
     {
         modelConfig.position = spatialTrackingModel.GetSpawnPositionWithSpatialTracking();
         onSpawnItem?.Invoke(modelConfig);
     }
-    /// <summary>
-    /// Change the casing of an item that has been spawned by the spawner.
-    /// </summary>
-    /// <param name="casingConfig">The casing config of the casing to change to.</param>
+
     private void ChaneCasingInModelSpawned(CasingConfig casingConfig)
     {
         onChaneCasingInModelSpawned?.Invoke(casingConfig);
     }
+
     private void PlayAnimationButtonClick()
     {
         onPlayModelAnimation?.Invoke();

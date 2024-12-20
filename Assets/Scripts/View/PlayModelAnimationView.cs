@@ -11,12 +11,10 @@ public class PlayModelAnimationView : MonoBehaviour
     }
     public void OpenAnimation()
     {
-        Debug.Log($"OpenAnimation {animator}");
         if (animator != null) animator.Play("Open");
     }
     public void CloseAnimation()
     {
-        Debug.Log($"CloseAnimation {animator}");
         if (animator != null) animator.Play("Close");
     }
 }

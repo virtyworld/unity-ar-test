@@ -17,5 +17,4 @@ MonoBehaviour:
   description: 0
   sprite: {fileID: 0}
   position: {x: 0, y: 0, z: 0}
-  movespeed: 5
-  casingConfig: {fileID: 0}
+  movespeed: 20

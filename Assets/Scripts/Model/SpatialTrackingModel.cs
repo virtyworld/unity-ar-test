@@ -8,7 +8,6 @@ public class SpatialTrackingModel
     {
         if (SpatialTrackingTarget == null)
         {
-            // Create a new spatial tracking target
             GameObject targetObject = new GameObject("SpatialTrackingTarget");
             SpatialTrackingTarget = targetObject.transform;
         }
@@ -23,7 +22,6 @@ public class SpatialTrackingModel
             return SpatialTrackingTarget.position;
         }
 
-        // Default fallback position if no tracking target is set
         return Vector3.zero;
     }
 }
